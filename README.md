@@ -8,6 +8,7 @@ is meant to be used with the [Real-Time SEO Module](https://www.drupal.org/proje
 ## Issues
 
 Any issues for the Drupal module should be reported in the [drupal.org issue queue](https://www.drupal.org/project/issues/yoast_seo).
+
 Any issues for the YoastSEO.js library should be reported in the [YoastSEO.js issue tracker](https://github.com/Yoast/YoastSEO.js/issues). This distribution may not be the latest version of the YoastSEO.js library for compatibility reasons with the Drupal module so care should be taken that issues may already be fixed in a later release.
 
 ## Maintainers
