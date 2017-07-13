@@ -1,8 +1,17 @@
 {
   "name": "rtseo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Content analysis for Drupal",
   "main": "index.js",
   "repository": "git@github.com:goalgorilla/YoastSEO.js.git",
-  "author": "Alexander Varwijk <alexander@goalgorilla.com>"
+  "author": "Alexander Varwijk <alexander@goalgorilla.com>",
+  "scripts": {
+    "build": "browserify lib/index.js -o dist/rtseo.js"
+  },
+  "dependencies": {
+    "yoastseo": "Yoast/YoastSEO.js#1.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^14.4.0"
+  }
 }
