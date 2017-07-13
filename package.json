@@ -1,0 +1,8 @@
+{
+  "name": "rtseo",
+  "version": "1.0.0",
+  "description": "Content analysis for Drupal",
+  "main": "index.js",
+  "repository": "git@github.com:goalgorilla/YoastSEO.js.git",
+  "author": "Alexander Varwijk <alexander@goalgorilla.com>"
+}
