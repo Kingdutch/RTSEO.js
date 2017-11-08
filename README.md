@@ -21,14 +21,12 @@ This distribution follows the same GPL license as the [original source](https://
 
 ## Developer instructions
 
-If you want to update the version of the YoastSEO.js file in this repostory do the following.
+If you want to modify the Real Time SEO library in this repository, do the 
+following.
 
-Clone the original YoastSEO.js files from their github repo and checkout the version you want to use in a separate folder:
+Install all dependencies with `yarn install`. This will ensure that the proper 
+version of the YoastSEO library gets downloaded as well as all development 
+dependencies such as bundler.
 
-`git clone https://github.com/Yoast/YoastSEO.js.git`
-
-Make sure you have grunt-cli installed using `yarn global add grunt-cli`. Install all project dependencies using `yarn install`.
-
-Run `grunt` in the root of the YoastSEO.js directory to compile source to a distributable file.
-
-Copy the contents of the `dist/` folder to this repository. Tag and release the new version.
+Once you are satisfied with your changes, run `yarn run bundle` to let bundler
+pull together all the required files. Your result will be in the `dist/` folder.
