@@ -1,7 +1,7 @@
 {
   "name": "goalgorilla/yoast_seo",
   "type": "drupal-library",
-  "description": "Compiled version of the YoastSEO.js library for use with the Real-Time SEO Drupal module.",
+  "description": "Implementation of the YoastSEO.js library for use with the Real-Time SEO Drupal module.",
   "license": "GPL-3.0",
   "homepage": "https://github.com/goalgorilla/YoastSEO.js"
 }
