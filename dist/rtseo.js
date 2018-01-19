@@ -135,28 +135,31 @@ const App = function ( args ) {
  * @returns {Object}
  */
 App.prototype.constructI18n = function( ) {
-  function createHandler(message) {
-    return function (target, thisArg, argumentsList) {
-      console.log(message, argumentsList);
-    };
-  }
+  // TODO: Figure out the required i18n functions and link them to Drupal.
 
-  const handler = {
-    apply: createHandler("i18n object used as function"),
-    get: function (target, thisArg, voidArgs) {
-      return new Proxy(function() {}, {
-        apply: function (p, thatArg, argumentsList) {
-          console.log("i18n." + thisArg + " called", argumentsList);
-
-          if (["dgettext", "dngettext"].indexOf(thisArg) !== -1) {
-            return argumentsList[1];
-          }
-        }
-      });
-    }
-  };
-
-  return new Proxy({}, handler);
+  // Use the code below to see how the i18n is utilised and what its interface should be.
+  // function createHandler(message) {
+  //   return function (target, thisArg, argumentsList) {
+  //     console.log(message, argumentsList);
+  //   };
+  // }
+  //
+  // const handler = {
+  //   apply: createHandler("i18n object used as function"),
+  //   get: function (target, thisArg, voidArgs) {
+  //     return new Proxy(function() {}, {
+  //       apply: function (p, thatArg, argumentsList) {
+  //         console.log("i18n." + thisArg + " called", argumentsList);
+  //
+  //         if (["dgettext", "dngettext"].indexOf(thisArg) !== -1) {
+  //           return argumentsList[1];
+  //         }
+  //       }
+  //     });
+  //   }
+  // };
+  //
+  // return new Proxy({}, handler);
 };
 
 /**
