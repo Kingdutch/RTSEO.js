@@ -6,4 +6,5 @@ module.exports = {
     filename: 'rtseo.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devtool: 'source-map',
 };
