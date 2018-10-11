@@ -6,7 +6,8 @@
   "repository": "git@github.com:goalgorilla/YoastSEO.js.git",
   "author": "Alexander Varwijk <alexander@goalgorilla.com>",
   "scripts": {
-    "build": "browserify lib/index.js -o dist/rtseo.js"
+    "build": "webpack --mode production",
+    "build:development": "webpack --mode development"
   },
   "dependencies": {
     "yoastseo": "Yoast/YoastSEO.js"
@@ -17,6 +18,8 @@
     "babel-preset-es2015": "^6.16.0",
     "babel-register": "^6.16.3",
     "babelify": "^7.3.0",
-    "browserify": "^14.4.0"
+    "browserify": "^14.4.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
