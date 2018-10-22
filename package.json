@@ -10,7 +10,7 @@
     "build:development": "webpack --mode development"
   },
   "dependencies": {
-    "yoastseo": "^1.40"
+    "yoastseo": "Yoast/YoastSEO.js"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
