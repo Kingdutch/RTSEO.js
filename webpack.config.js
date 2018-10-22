@@ -7,4 +7,15 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'source-map',
+  module: {
+    rules: [
+      {
+        test: /\.m?jsx?$/,
+        exclude: /node_modules\/(?!yoastseo\/)/,
+        use: {
+          loader: 'babel-loader',
+        }
+      }
+    ]
+  }
 };
