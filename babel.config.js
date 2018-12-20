@@ -12,7 +12,8 @@ module.exports = function (api) {
           // See: https://www.drupal.org/docs/8/system-requirements/browser-requirements
           "targets": "> 0.25%, not ie < 11, not firefox < 5, not opera < 12, not safari < 5, not dead"
         }
-      ]
+      ],
+      "@babel/react"
     ]
   };
 };
