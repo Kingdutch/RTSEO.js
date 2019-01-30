@@ -6,12 +6,13 @@
   "repository": "git@github.com:goalgorilla/YoastSEO.js.git",
   "author": "Alexander Varwijk <alexander@goalgorilla.com>",
   "scripts": {
-    "build": "webpack --mode production",
-    "build:development": "webpack --mode development"
+    "build": "webpack --mode production --progress",
+    "build:development": "webpack --mode development --progress"
   },
   "dependencies": {
+    "lodash-es": "^4.17.11",
     "redux-logger": "^3.0.6",
-    "yoastseo": "Yoast/YoastSEO.js"
+    "yoastseo": "Yoast/YoastSEO.js#f438245e522437c3a55c1abfa8697ccaa3851857"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
