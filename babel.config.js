@@ -14,6 +14,9 @@ module.exports = function (api) {
         }
       ],
       "@babel/react"
+    ],
+    "plugins": [
+      "@babel/proposal-class-properties"
     ]
   };
 };
